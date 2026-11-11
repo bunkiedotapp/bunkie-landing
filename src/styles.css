@@ -61,7 +61,7 @@
   --radius: 0.25rem;
 
   /* Raw brand palette */
-  --ink: oklch(0.1149 0 0); /* #050505 */
+  --ink: oklch(0 0 0); /* #000000 */
   --paper: oklch(1 0 0); /* #FFFFFF */
   --lime: oklch(0.9281 0.2304 123.98); /* #C8FF00 */
   --lime-foreground: oklch(0.1149 0 0);
@@ -70,26 +70,60 @@
   --line: oklch(1 0 0 / 12%);
   --line-strong: oklch(1 0 0 / 28%);
 
-  /* Semantic (dark-first site) */
-  --background: var(--ink);
-  --foreground: var(--paper);
-  --card: oklch(0.1776 0 0);
-  --card-foreground: var(--paper);
-  --popover: oklch(0.1776 0 0);
-  --popover-foreground: var(--paper);
+  /* Semantic (light is the safe fallback when no system preference is available) */
+  --surface: var(--paper);
+  --surface-foreground: var(--ink);
+  --surface-card: oklch(0.965 0 0);
+  --surface-muted: oklch(0.94 0 0);
+  --surface-muted-foreground: var(--paper-muted);
+  --surface-line: oklch(0.1149 0 0 / 12%);
+  --surface-line-strong: oklch(0.1149 0 0 / 28%);
+  --background: var(--surface);
+  --foreground: var(--surface-foreground);
+  --card: var(--surface-card);
+  --card-foreground: var(--surface-foreground);
+  --popover: var(--surface-card);
+  --popover-foreground: var(--surface-foreground);
   --primary: var(--lime);
   --primary-foreground: var(--lime-foreground);
-  --secondary: oklch(0.2178 0 0);
-  --secondary-foreground: var(--paper);
-  --muted: oklch(0.2178 0 0);
-  --muted-foreground: var(--ink-muted);
+  --secondary: var(--surface-muted);
+  --secondary-foreground: var(--surface-foreground);
+  --muted: var(--surface-muted);
+  --muted-foreground: var(--surface-muted-foreground);
   --accent: var(--lime);
   --accent-foreground: var(--lime-foreground);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: var(--paper);
-  --border: var(--line);
-  --input: var(--line-strong);
+  --line: var(--surface-line);
+  --line-strong: var(--surface-line-strong);
+  --border: var(--surface-line);
+  --input: var(--surface-line-strong);
   --ring: var(--lime);
+  color-scheme: light;
+}
+
+:root.theme-dark {
+  --surface: var(--ink);
+  --surface-foreground: var(--paper);
+  --surface-card: oklch(0.1776 0 0);
+  --surface-muted: oklch(0.2178 0 0);
+  --surface-muted-foreground: var(--ink-muted);
+  --surface-line: oklch(1 0 0 / 12%);
+  --surface-line-strong: oklch(1 0 0 / 28%);
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not(.theme-light) {
+    --surface: var(--ink);
+    --surface-foreground: var(--paper);
+    --surface-card: oklch(0.1776 0 0);
+    --surface-muted: oklch(0.2178 0 0);
+    --surface-muted-foreground: var(--ink-muted);
+    --surface-line: oklch(1 0 0 / 12%);
+    --surface-line-strong: oklch(1 0 0 / 28%);
+    color-scheme: dark;
+  }
 }
 
 @layer base {
@@ -128,6 +162,33 @@
 @media (prefers-reduced-motion: no-preference) {
   html {
     scroll-behavior: smooth;
+  }
+}
+
+/* The official artwork is supplied in light- and dark-surface variants. */
+.bunkie-logo__on-dark {
+  display: none;
+}
+
+.bunkie-logo__on-light {
+  display: block;
+}
+
+:root.theme-dark .bunkie-logo__on-dark {
+  display: block;
+}
+
+:root.theme-dark .bunkie-logo__on-light {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not(.theme-light) .bunkie-logo__on-dark {
+    display: block;
+  }
+
+  :root:not(.theme-light) .bunkie-logo__on-light {
+    display: none;
   }
 }
 

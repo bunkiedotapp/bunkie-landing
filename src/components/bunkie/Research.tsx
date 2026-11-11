@@ -30,15 +30,22 @@ export function Research() {
       <div className="shell">
         <div className="grid gap-12 md:grid-cols-12 md:gap-8">
           <div className="md:col-span-7">
-            <SectionLabel index="04" className="text-ink-muted">Our Research</SectionLabel>
+            <SectionLabel index="04" className="text-muted-foreground">
+              Our Research
+            </SectionLabel>
             <Reveal>
               <h2 id="research-title" className="display-lg mt-10">
                 Before we build, <span className="text-lime">we listen.</span>
               </h2>
             </Reveal>
           </div>
-          <Reveal delay={100} className="space-y-5 text-lg leading-relaxed text-ink-muted md:col-span-5 md:self-end">
-            <p className="text-paper">We believe meaningful products start with understanding real problems.</p>
+          <Reveal
+            delay={100}
+            className="space-y-5 text-lg leading-relaxed text-muted-foreground md:col-span-5 md:self-end"
+          >
+            <p className="text-foreground">
+              We believe meaningful products start with understanding real problems.
+            </p>
             <p>
               We're currently conducting market research to understand the experiences of
               accommodation seekers and property providers.
@@ -63,10 +70,20 @@ export function Research() {
               </div>
               <div>
                 <h3 className="display-md max-w-md">{s.title}</h3>
-                <p className={cn("mt-6 max-w-md text-lg leading-relaxed", s.lime ? "opacity-80" : "text-ink-muted")}>
+                <p
+                  className={cn(
+                    "mt-6 max-w-md text-lg leading-relaxed",
+                    s.lime ? "opacity-80" : "text-muted-foreground",
+                  )}
+                >
                   {s.body}
                 </p>
-                <Button asChild variant={s.lime ? "ink" : "lime"} size="xl" className="mt-10 w-full sm:w-auto">
+                <Button
+                  asChild
+                  variant={s.lime ? "ink" : "lime"}
+                  size="xl"
+                  className="mt-10 w-full sm:w-auto"
+                >
                   <a href={s.href} {...EXTERNAL}>
                     {s.cta} <ArrowUpRight />
                   </a>

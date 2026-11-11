@@ -1,18 +1,32 @@
 import { cn } from "@/lib/utils";
-import bunkieLogo from "@/assets/bunkie-logo.png.asset.json";
+import bunkieLogoDark from "@/assets/bunkie-logo-dark.png";
+import bunkieLogoLight from "@/assets/bunkie-logo-light.png";
 
 /**
- * Official Bunkie logo (white wordmark on transparent), supplied by the brand owner.
- * Never redraw or AI-generate this artwork — swap the asset file only.
+ * Official Bunkie wordmarks supplied by the brand owner.
+ * Never redraw or AI-generate this artwork — swap the asset files only.
  */
 export function BunkieLogo({ className }: { className?: string }) {
   return (
-    <img
-      src={bunkieLogo.url}
-      alt="Bunkie"
-      width={776}
-      height={297}
-      className={cn("h-7 w-auto sm:h-8", className)}
-    />
+    <span
+      className={cn("bunkie-logo relative block h-7 w-[5.75rem] sm:h-8 sm:w-[6.5rem]", className)}
+      role="img"
+      aria-label="Bunkie"
+    >
+      <img
+        src={bunkieLogoLight}
+        alt=""
+        width={776}
+        height={297}
+        className="bunkie-logo__on-light absolute inset-0 size-full object-contain"
+      />
+      <img
+        src={bunkieLogoDark}
+        alt=""
+        width={776}
+        height={297}
+        className="bunkie-logo__on-dark absolute inset-0 size-full object-contain"
+      />
+    </span>
   );
 }

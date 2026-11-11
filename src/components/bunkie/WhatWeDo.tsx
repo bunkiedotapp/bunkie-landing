@@ -33,7 +33,9 @@ function Side({
               decoding="async"
               className="photo-mono size-full object-cover"
             />
-            <span className="eyebrow absolute left-0 top-0 rounded-br-xl bg-lime px-3 py-2 text-lime-foreground">{tag}</span>
+            <span className="eyebrow absolute left-0 top-0 rounded-br-xl bg-lime px-3 py-2 text-lime-foreground">
+              {tag}
+            </span>
           </div>
         </Reveal>
         <Reveal
@@ -44,7 +46,12 @@ function Side({
           )}
         >
           <h3 className="display-md max-w-xl">{title}</h3>
-          <p className={cn("mt-8 max-w-lg text-lg leading-relaxed", inverted ? "text-paper-muted" : "text-ink-muted")}>
+          <p
+            className={cn(
+              "mt-8 max-w-lg text-lg leading-relaxed",
+              inverted ? "text-paper-muted" : "text-ink-muted",
+            )}
+          >
             {body}
           </p>
         </Reveal>
@@ -55,9 +62,15 @@ function Side({
 
 export function WhatWeDo() {
   return (
-    <section id="what-we-do" aria-labelledby="wwd-title" className="border-t border-line pt-24 sm:pt-36">
+    <section
+      id="what-we-do"
+      aria-labelledby="wwd-title"
+      className="border-t border-line pt-24 sm:pt-36"
+    >
       <div className="shell pb-8 sm:pb-12">
-        <SectionLabel index="03" className="text-ink-muted">What We Do</SectionLabel>
+        <SectionLabel index="03" className="text-muted-foreground">
+          What We Do
+        </SectionLabel>
         <Reveal>
           <h2 id="wwd-title" className="display-lg mt-10 max-w-5xl">
             Bringing two sides <span className="text-lime">closer.</span>
