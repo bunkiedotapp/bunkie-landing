@@ -136,8 +136,11 @@
 @utility display-xl {
   font-family: var(--font-display);
   font-weight: 800;
-  font-size: clamp(2.9rem, 11.2vw, 11.5rem);
+  font-size: 12.6vw;
   line-height: 0.88;
+  @media (min-width: 768px) {
+    font-size: min(8.4vw, 10.5rem);
+  }
   letter-spacing: -0.055em;
   text-transform: uppercase;
 }
