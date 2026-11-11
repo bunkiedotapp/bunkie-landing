@@ -1,17 +1,18 @@
 import { cn } from "@/lib/utils";
+import bunkieLogo from "@/assets/bunkie-logo.png.asset.json";
 
 /**
- * Temporary typographic stand-in for the official Bunkie logo.
- * Replace the inner markup with the supplied transparent logo file once it is uploaded —
- * the official artwork must never be redrawn or AI-generated.
+ * Official Bunkie logo (white wordmark on transparent), supplied by the brand owner.
+ * Never redraw or AI-generate this artwork — swap the asset file only.
  */
 export function BunkieLogo({ className }: { className?: string }) {
   return (
-    <span
-      className={cn("font-display text-2xl font-extrabold lowercase leading-none tracking-[-0.06em]", className)}
-      aria-label="Bunkie"
-    >
-      bunkie
-    </span>
+    <img
+      src={bunkieLogo.url}
+      alt="Bunkie"
+      width={776}
+      height={297}
+      className={cn("h-7 w-auto sm:h-8", className)}
+    />
   );
 }
