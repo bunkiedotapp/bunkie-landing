@@ -21,7 +21,7 @@ export function Hero() {
             Finding a place to live should be easier. We're building a better way to discover
             accommodation and connect with people who share your lifestyle.
           </p>
-          <div className="flex flex-col gap-3 sm:flex-row md:col-span-7 md:justify-end md:self-end">
+          <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap md:col-span-7 md:justify-end md:self-end">
             <Button asChild variant="lime" size="xl">
               <a href={SEEKER_SURVEY_URL} {...EXTERNAL}>
                 I'm Looking for Accommodation <ArrowUpRight />
