@@ -33,7 +33,7 @@ function Side({
               decoding="async"
               className="photo-mono size-full object-cover"
             />
-            <span className="eyebrow absolute left-0 top-0 bg-lime px-3 py-2 text-lime-foreground">{tag}</span>
+            <span className="eyebrow absolute left-0 top-0 rounded-br-xl bg-lime px-3 py-2 text-lime-foreground">{tag}</span>
           </div>
         </Reveal>
         <Reveal
