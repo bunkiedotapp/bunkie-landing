@@ -28,3 +28,8 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+- Bunkie is a single-page brand/coming-soon site: sections live in `src/components/bunkie/` and are composed in `src/routes/index.tsx` with in-page anchors (the user asked for one scrolling page).
+- All external destinations (forms, socials, email) live in `src/lib/bunkie.ts` so links are changed in one place; `src/test/bunkie-links.test.ts` guards them.
+- The logo is rendered only through `BunkieLogo`; swap in the official file there, never redraw or AI-generate it.
