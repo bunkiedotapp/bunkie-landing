@@ -1,23 +1,56 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { SiteNav } from "@/components/bunkie/SiteNav";
+import { Hero } from "@/components/bunkie/Hero";
+import { About } from "@/components/bunkie/About";
+import { Vision } from "@/components/bunkie/Vision";
+import { WhatWeDo } from "@/components/bunkie/WhatWeDo";
+import { Research } from "@/components/bunkie/Research";
+import { ComingSoon } from "@/components/bunkie/ComingSoon";
+import { Socials } from "@/components/bunkie/Socials";
+import { SiteFooter } from "@/components/bunkie/SiteFooter";
 
-// The home route ships no og:image, so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+const TITLE = "Bunkie — Find Your People. Find Your Place.";
+const DESCRIPTION =
+  "Bunkie is building a better way to discover accommodation and compatible roommates. Explore our vision and help shape the future of shared living.";
+
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: TITLE },
+      { name: "description", content: DESCRIPTION },
+      { property: "og:title", content: TITLE },
+      { property: "og:description", content: DESCRIPTION },
+      { property: "og:type", content: "website" },
+      { property: "og:site_name", content: "Bunkie" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: TITLE },
+      { name: "twitter:description", content: DESCRIPTION },
+      { name: "twitter:site", content: "@bunkiedotapp" },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <>
+      <a
+        href="#main"
+        className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:bg-lime focus:px-4 focus:py-2 focus:text-lime-foreground"
+      >
+        Skip to content
+      </a>
+      <SiteNav />
+      <main id="main">
+        <Hero />
+        <About />
+        <Vision />
+        <WhatWeDo />
+        <Research />
+        <ComingSoon />
+        <Socials />
+      </main>
+      <SiteFooter />
+    </>
   );
 }
