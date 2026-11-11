@@ -33,10 +33,10 @@ export function Socials() {
               >
                 <SocialIcon name={s.key} className="size-6 shrink-0 text-lime transition-colors group-hover:text-lime-foreground" />
                 <span className="font-display text-2xl font-extrabold uppercase tracking-[-0.03em] sm:text-3xl">{s.label}</span>
-                <span className="eyebrow ml-auto hidden text-ink-muted transition-colors group-hover:text-lime-foreground sm:inline">
+                <span className="eyebrow ml-auto hidden text-ink-muted transition-colors group-hover:text-lime-foreground lg:inline">
                   {s.handle}
                 </span>
-                <ArrowUpRight className="size-5 shrink-0 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 max-sm:ml-auto" />
+                <ArrowUpRight className="size-5 shrink-0 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 max-lg:ml-auto" />
               </a>
             </Reveal>
           ))}
