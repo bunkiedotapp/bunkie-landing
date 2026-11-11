@@ -16,9 +16,9 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        lime: "rounded-none bg-lime text-lime-foreground font-bold uppercase tracking-wide hover:bg-paper hover:text-ink transition-[background-color,color,transform] active:scale-[0.98]",
-        line: "rounded-none border border-line-strong bg-transparent text-foreground font-bold uppercase tracking-wide hover:border-lime hover:text-lime transition-colors",
-        ink: "rounded-none bg-ink text-paper font-bold uppercase tracking-wide hover:bg-lime hover:text-lime-foreground transition-colors",
+        lime: "rounded-full bg-lime text-lime-foreground font-bold uppercase tracking-wide hover:bg-paper hover:text-ink transition-[background-color,color,transform] active:scale-[0.98]",
+        line: "rounded-full border border-line-strong bg-transparent text-foreground font-bold uppercase tracking-wide hover:border-lime hover:text-lime transition-colors",
+        ink: "rounded-full bg-ink text-paper font-bold uppercase tracking-wide hover:bg-lime hover:text-lime-foreground transition-colors",
       },
       size: {
         default: "h-9 px-4 py-2",

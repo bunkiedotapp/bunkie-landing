@@ -23,7 +23,7 @@ function Side({
     <div className={cn(inverted ? "bg-paper text-ink" : "bg-ink text-paper")}>
       <div className="shell grid items-stretch gap-10 py-16 sm:py-24 md:grid-cols-12 md:gap-8">
         <Reveal className={cn("md:col-span-5", inverted ? "md:order-2 md:col-start-8" : "")}>
-          <div className="relative aspect-[4/5] overflow-hidden">
+          <div className="relative aspect-[4/5] overflow-hidden rounded-2xl">
             <img
               src={img}
               alt={alt}
@@ -33,7 +33,7 @@ function Side({
               decoding="async"
               className="photo-mono size-full object-cover"
             />
-            <span className="eyebrow absolute left-0 top-0 bg-lime px-3 py-2 text-lime-foreground">{tag}</span>
+            <span className="eyebrow absolute left-0 top-0 rounded-br-xl bg-lime px-3 py-2 text-lime-foreground">{tag}</span>
           </div>
         </Reveal>
         <Reveal
