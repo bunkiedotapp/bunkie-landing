@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
-import bunkieLogoDark from "@/assets/bunkie-logo-dark.png";
-import bunkieLogoLight from "@/assets/bunkie-logo-light.png";
+import bunkieLogoDark from "@/assets/bunkie-logo-dark.webp";
+import bunkieLogoLight from "@/assets/bunkie-logo-light.webp";
 
 /**
  * Official Bunkie wordmarks supplied by the brand owner.
@@ -16,15 +16,15 @@ export function BunkieLogo({ className }: { className?: string }) {
       <img
         src={bunkieLogoLight}
         alt=""
-        width={776}
-        height={297}
+        width={720}
+        height={220}
         className="bunkie-logo__on-light absolute inset-0 size-full object-contain"
       />
       <img
         src={bunkieLogoDark}
         alt=""
-        width={776}
-        height={297}
+        width={720}
+        height={220}
         className="bunkie-logo__on-dark absolute inset-0 size-full object-contain"
       />
     </span>
