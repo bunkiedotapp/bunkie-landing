@@ -11,9 +11,9 @@ import { Socials } from "@/components/bunkie/Socials";
 import { FAQ } from "@/components/bunkie/FAQ";
 import { SiteFooter } from "@/components/bunkie/SiteFooter";
 
-const TITLE = "Bunkie — Find Your People. Find Your Place.";
+const TITLE = "Bunkie – Find Rooms, PGs & Compatible Roommates";
 const DESCRIPTION =
-  "Bunkie is building a better way to discover PGs, flats for rent and shared accommodation with lifestyle context and roommate compatibility.";
+  "Discover rooms, PGs and shared flats with Bunkie. Explore accommodation and find compatible roommates based on lifestyle and living preferences.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -24,10 +24,58 @@ export const Route = createFileRoute("/")({
       { property: "og:description", content: DESCRIPTION },
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "Bunkie" },
+      { property: "og:url", content: "https://www.bunkie.app/" },
+      { property: "og:image", content: "https://www.bunkie.app/og-image.png" },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      {
+        property: "og:image:alt",
+        content: "Bunkie – Find your place. Find your people. Discover rooms, PGs and compatible roommates.",
+      },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: TITLE },
       { name: "twitter:description", content: DESCRIPTION },
       { name: "twitter:site", content: "@bunkiedotapp" },
+      { name: "twitter:image", content: "https://www.bunkie.app/og-image.png" },
+      {
+        name: "twitter:image:alt",
+        content: "Bunkie – Find your place. Find your people. Discover rooms, PGs and compatible roommates.",
+      },
+    ],
+    links: [
+      { rel: "canonical", href: "https://www.bunkie.app/" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify([
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            name: "Bunkie",
+            url: "https://www.bunkie.app/",
+            logo: "https://www.bunkie.app/bunkie-logo.png",
+            sameAs: [
+              "https://www.instagram.com/bunkie.app",
+              "https://www.threads.com/@bunkie.app",
+              "https://x.com/bunkiedotapp",
+              "https://www.facebook.com/profile.php?id=61596411542689",
+              "https://www.youtube.com/@bunkiedotapp",
+            ],
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            name: "Bunkie",
+            url: "https://www.bunkie.app/",
+            publisher: {
+              "@type": "Organization",
+              name: "Bunkie",
+              url: "https://www.bunkie.app/",
+            },
+          },
+        ]),
+      },
     ],
   }),
   component: Index,

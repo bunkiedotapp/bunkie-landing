@@ -81,14 +81,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Bunkie — Find Your People. Find Your Place." },
-      { name: "description", content: "Bunkie is building a better way to discover accommodation and compatible roommates." },
       { name: "author", content: "Bunkie" },
       { name: "theme-color", content: "#050505" },
-      { property: "og:title", content: "Bunkie — Find Your People. Find Your Place." },
-      { property: "og:description", content: "Bunkie is building a better way to discover accommodation and compatible roommates." },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
       {
