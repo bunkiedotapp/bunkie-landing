@@ -9,7 +9,7 @@ export function Socials() {
     <section id="socials" aria-labelledby="socials-title" className="py-24 sm:py-36">
       <div className="shell grid gap-12 md:grid-cols-12 md:gap-8">
         <div className="md:col-span-5">
-          <SectionLabel index="06" className="text-muted-foreground">
+          <SectionLabel index="07" className="text-muted-foreground">
             Follow Our Journey
           </SectionLabel>
           <Reveal>

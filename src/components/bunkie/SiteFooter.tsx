@@ -5,6 +5,7 @@ const explore = [
   { href: "#about", label: "About" },
   { href: "#vision", label: "Our Vision" },
   { href: "#research", label: "Research" },
+  { href: "#early-access", label: "Early Access" },
 ];
 
 const linkCls = "text-foreground transition-colors hover:text-lime";

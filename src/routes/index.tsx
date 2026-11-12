@@ -6,6 +6,7 @@ import { Vision } from "@/components/bunkie/Vision";
 import { WhatWeDo } from "@/components/bunkie/WhatWeDo";
 import { Research } from "@/components/bunkie/Research";
 import { ComingSoon } from "@/components/bunkie/ComingSoon";
+import { EarlyAccess } from "@/components/bunkie/EarlyAccess";
 import { Socials } from "@/components/bunkie/Socials";
 import { SiteFooter } from "@/components/bunkie/SiteFooter";
 
@@ -48,6 +49,7 @@ function Index() {
         <WhatWeDo />
         <Research />
         <ComingSoon />
+        <EarlyAccess />
         <Socials />
       </main>
       <SiteFooter />

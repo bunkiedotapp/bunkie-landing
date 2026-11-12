@@ -3,16 +3,33 @@ export const SEEKER_SURVEY_URL =
   "https://docs.google.com/forms/d/e/1FAIpQLSfgnWEXhKfuGeuu_qHzIdzfGknnSJ8HvBajwLxVtzk9yZdC8A/viewform?usp=sharing&ouid=102302593370908455935";
 export const PROVIDER_SURVEY_URL =
   "https://docs.google.com/forms/d/e/1FAIpQLSeuU2vFrsuvtFeKWWVGojKUf4nGJl5jo2oh6ikfzZGqk8DqNg/viewform?usp=sharing&ouid=102302593370908455935";
+export const EARLY_ACCESS_FORM_EMBED_URL =
+  "https://docs.google.com/forms/d/e/1FAIpQLSfgRoYkWiQF_g31CMkVSl3I5JCi16YUO0qlfsZH9AABLalO4A/viewform?embedded=true";
 
 export const CONTACT_EMAIL = "joinbunkie@gmail.com";
 
 export type SocialKey = "instagram" | "x" | "facebook" | "youtube";
 
 export const SOCIALS: { key: SocialKey; label: string; handle: string; href: string }[] = [
-  { key: "instagram", label: "Instagram", handle: "@bunkie.app", href: "https://www.instagram.com/bunkie.app" },
+  {
+    key: "instagram",
+    label: "Instagram",
+    handle: "@bunkie.app",
+    href: "https://www.instagram.com/bunkie.app",
+  },
   { key: "x", label: "X", handle: "@bunkiedotapp", href: "https://x.com/bunkiedotapp" },
-  { key: "facebook", label: "Facebook", handle: "Bunkie", href: "https://www.facebook.com/profile.php?id=61596411542689" },
-  { key: "youtube", label: "YouTube", handle: "@bunkiedotapp", href: "https://www.youtube.com/@bunkiedotapp" },
+  {
+    key: "facebook",
+    label: "Facebook",
+    handle: "Bunkie",
+    href: "https://www.facebook.com/profile.php?id=61596411542689",
+  },
+  {
+    key: "youtube",
+    label: "YouTube",
+    handle: "@bunkiedotapp",
+    href: "https://www.youtube.com/@bunkiedotapp",
+  },
 ];
 
 export const NAV_ITEMS = [
@@ -20,6 +37,7 @@ export const NAV_ITEMS = [
   { id: "vision", label: "Our Vision" },
   { id: "what-we-do", label: "What We Do" },
   { id: "research", label: "Research" },
+  { id: "early-access", label: "Early Access" },
   { id: "socials", label: "Socials" },
 ] as const;
 
