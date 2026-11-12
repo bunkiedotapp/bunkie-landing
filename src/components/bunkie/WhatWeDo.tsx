@@ -1,5 +1,5 @@
-import seekersImg from "@/assets/seekers-window.jpg";
-import providersImg from "@/assets/providers-door.jpg";
+import seekersImg from "@/assets/seekers-apartment.png";
+import providersImg from "@/assets/providers-key.png";
 import { cn } from "@/lib/utils";
 import { Reveal } from "./Reveal";
 import { SectionLabel } from "./SectionLabel";
@@ -27,11 +27,11 @@ function Side({
             <img
               src={img}
               alt={alt}
-              width={1024}
-              height={1280}
+              width={562}
+              height={661}
               loading="lazy"
               decoding="async"
-              className="photo-mono size-full object-cover"
+              className="size-full object-cover"
             />
             <span className="eyebrow absolute left-0 top-0 rounded-br-xl bg-lime px-3 py-2 text-lime-foreground">
               {tag}
@@ -82,7 +82,7 @@ export function WhatWeDo() {
         title="For those looking for a place."
         body="Whether you're a student, a working professional or someone moving to a new city, finding the right accommodation and the right people matters."
         img={seekersImg}
-        alt="A single lit window in a dark apartment building at night"
+        alt="A sunlit apartment building framed by leafy trees"
       />
       <Side
         inverted
