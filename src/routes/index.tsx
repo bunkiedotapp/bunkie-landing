@@ -8,11 +8,12 @@ import { Research } from "@/components/bunkie/Research";
 import { ComingSoon } from "@/components/bunkie/ComingSoon";
 import { EarlyAccess } from "@/components/bunkie/EarlyAccess";
 import { Socials } from "@/components/bunkie/Socials";
+import { FAQ } from "@/components/bunkie/FAQ";
 import { SiteFooter } from "@/components/bunkie/SiteFooter";
 
 const TITLE = "Bunkie — Find Your People. Find Your Place.";
 const DESCRIPTION =
-  "Bunkie is building a better way to discover accommodation and compatible roommates. Explore our vision and help shape the future of shared living.";
+  "Bunkie is building a better way to discover PGs, flats for rent and shared accommodation with lifestyle context and roommate compatibility.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -51,6 +52,7 @@ function Index() {
         <ComingSoon />
         <EarlyAccess />
         <Socials />
+        <FAQ />
       </main>
       <SiteFooter />
     </>

@@ -24,8 +24,9 @@ export function EarlyAccess() {
         <div className="md:col-span-6 md:col-start-7">
           <Reveal delay={100}>
             <p className="max-w-xl text-lg leading-relaxed text-muted-foreground">
-              Finding a place to live — or the right people to live with — should be easier.
-              Register your interest and be among the first to hear when Bunkie is ready.
+              Help shape Bunkie’s first community in Gurugram. Whether you’re looking for PGs,
+              flats for rent or rooms—or you provide shared accommodation—register your interest
+              and be among the first to hear when Bunkie is ready.
             </p>
           </Reveal>
 

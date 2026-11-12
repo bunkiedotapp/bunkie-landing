@@ -35,8 +35,9 @@ export function About() {
               people to live with should not be unnecessarily difficult.
             </p>
             <p className="border-l-2 border-lime pl-5">
-              We're building Bunkie to bring accommodation discovery and roommate compatibility
-              closer together, creating a more thoughtful shared-living experience.
+              Traditional accommodation searches often stop at rent, location and photographs.
+              Bunkie is being built to bring lifestyle and roommate compatibility into property
+              discovery, helping people make more informed shared-living decisions.
             </p>
           </Reveal>
         </div>

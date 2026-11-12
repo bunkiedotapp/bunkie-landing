@@ -80,7 +80,7 @@ export function WhatWeDo() {
       <Side
         tag="Side A — Seekers"
         title="For those looking for a place."
-        body="Whether you're a student, a working professional or someone moving to a new city, finding the right accommodation and the right people matters."
+        body="Students, fresh graduates, working professionals and people relocating will be able to explore PGs, flats for rent, private rooms and shared accommodation around their budget, location and preferences—then consider property and roommate fit before reaching out."
         img={seekersImg}
         alt="A sunlit apartment building framed by leafy trees"
       />
@@ -88,7 +88,7 @@ export function WhatWeDo() {
         inverted
         tag="Side B — Providers"
         title="For those providing a place."
-        body="PG owners, landlords and property providers are an essential part of the shared-living ecosystem. We want to understand their challenges and build towards a better experience for them too."
+        body="PG owners, landlords and property providers will be able to create richer listings with pricing, images, amenities and rules for smoking, pets, visitors, parties and other restrictions—setting clearer expectations for everyone."
         img={providersImg}
         alt="A key left in the lock of an open apartment door"
       />
