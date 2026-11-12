@@ -1,7 +1,7 @@
 import { ArrowUpRight } from "lucide-react";
-import heroBedroom from "@/assets/hero-bedroom.png";
-import heroBuilding from "@/assets/hero-building.png";
-import heroRoommates from "@/assets/hero-roommates.png";
+import heroBedroom from "@/assets/hero-bedroom.webp";
+import heroBuilding from "@/assets/hero-building.webp";
+import heroRoommates from "@/assets/hero-roommates.webp";
 import { Button } from "@/components/ui/button";
 import { EXTERNAL, PROVIDER_SURVEY_URL, SEEKER_SURVEY_URL } from "@/lib/bunkie";
 import { ComingSoonDot } from "./ComingSoonDot";
@@ -26,8 +26,8 @@ function HeroGallery() {
         <img
           src={heroRoommates}
           alt="Three friends spending time together in a shared apartment"
-          width={1199}
-          height={1312}
+          width={900}
+          height={985}
           className="size-full object-cover"
           fetchPriority="high"
         />
@@ -37,8 +37,8 @@ function HeroGallery() {
         <img
           src={heroBedroom}
           alt="A warm, inviting bedroom in a shared accommodation"
-          width={1672}
-          height={941}
+          width={1000}
+          height={563}
           className="size-full object-cover"
         />
       </figure>
@@ -47,8 +47,8 @@ function HeroGallery() {
         <img
           src={heroBuilding}
           alt="A contemporary apartment building surrounded by greenery"
-          width={1672}
-          height={941}
+          width={1000}
+          height={563}
           className="size-full object-cover"
         />
       </figure>
