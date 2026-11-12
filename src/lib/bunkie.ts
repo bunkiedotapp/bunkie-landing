@@ -8,7 +8,7 @@ export const EARLY_ACCESS_FORM_EMBED_URL =
 
 export const CONTACT_EMAIL = "joinbunkie@gmail.com";
 
-export type SocialKey = "instagram" | "x" | "facebook" | "youtube";
+export type SocialKey = "instagram" | "threads" | "x" | "facebook" | "youtube";
 
 export const SOCIALS: { key: SocialKey; label: string; handle: string; href: string }[] = [
   {
@@ -16,6 +16,12 @@ export const SOCIALS: { key: SocialKey; label: string; handle: string; href: str
     label: "Instagram",
     handle: "@bunkie.app",
     href: "https://www.instagram.com/bunkie.app",
+  },
+  {
+    key: "threads",
+    label: "Threads",
+    handle: "@bunkie.app",
+    href: "https://www.threads.com/@bunkie.app",
   },
   { key: "x", label: "X", handle: "@bunkiedotapp", href: "https://x.com/bunkiedotapp" },
   {

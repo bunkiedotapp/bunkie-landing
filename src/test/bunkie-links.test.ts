@@ -21,9 +21,10 @@ describe("Bunkie official destinations", () => {
       "https://docs.google.com/forms/d/e/1FAIpQLSfgRoYkWiQF_g31CMkVSl3I5JCi16YUO0qlfsZH9AABLalO4A/viewform?embedded=true",
     );
   });
-  it("lists exactly the four official social profiles", () => {
+  it("lists the five official social profiles", () => {
     expect(SOCIALS.map((s) => s.href)).toEqual([
       "https://www.instagram.com/bunkie.app",
+      "https://www.threads.com/@bunkie.app",
       "https://x.com/bunkiedotapp",
       "https://www.facebook.com/profile.php?id=61596411542689",
       "https://www.youtube.com/@bunkiedotapp",
