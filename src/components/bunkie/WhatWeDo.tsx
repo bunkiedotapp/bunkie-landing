@@ -1,5 +1,5 @@
-import seekersImg from "@/assets/seekers-apartment.png";
-import providersImg from "@/assets/providers-key.png";
+import seekersImg from "@/assets/seekers-apartment.webp";
+import providersImg from "@/assets/providers-key.webp";
 import { cn } from "@/lib/utils";
 import { Reveal } from "./Reveal";
 import { SectionLabel } from "./SectionLabel";
