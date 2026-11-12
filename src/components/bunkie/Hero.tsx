@@ -29,7 +29,6 @@ function HeroGallery() {
           width={900}
           height={985}
           className="size-full object-cover"
-          fetchPriority="high"
         />
       </figure>
 
@@ -40,6 +39,7 @@ function HeroGallery() {
           width={1000}
           height={563}
           className="size-full object-cover"
+          fetchPriority="high"
         />
       </figure>
 
